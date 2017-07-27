@@ -1,1 +1,61 @@
+* {
+    font-style: arial;
+}
 
+.jumbotron {
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url("images/mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;
+}
+
+.jumbotron h1 {
+    color: #ffffff;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.65);
+}
+
+.jumbotron p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1.5em;
+}
+
+.jumbotron .jumbo-button {
+    display: flex;
+    flex-direction: column;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;
+    background-color: #f32853;
+    border-color: #f32853;
+    font-weight: 700;
+    height: 3.15em;
+    border-width: 2.5px;
+    transition: all 0.3s ease;
+}
+
+.jumbotron .jumbo-button:hover {
+    background-color: transparent;
+}
+
+.more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #323037;
+    border-color: #323037;
+    font-weight: 700;
+    height: 3.15em;
+    border-width: 2.5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
