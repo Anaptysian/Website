@@ -13,6 +13,7 @@ button:hover {
 body {
     overflow-y: scroll;
     overflow-x: hidden;
+    width: 100%;
 }
 
 .jumbotron {
@@ -141,6 +142,27 @@ body {
         transform: scale(2);
     }
     .jumbotron h1 {
-        font-size: 100px;
+        font-size: 10px;
+    }
+
+    .jumbotron p {
+        font-size: 7px;
+    }
+
+    .jumbotron .jumbo-button {
+        font-size: 5px;
+        width: 60px;
+        height: 30px;
+    }
+
+    .newsletter button {
+        height: 30px;
+        width: 90px;
+        line-height: 15px;
+    }
+
+    .newsletter input {
+        height: 30px;
+        width: 180px;
     }
 }
