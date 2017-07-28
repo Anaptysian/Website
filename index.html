@@ -20,19 +20,24 @@
         });
         </script>-->
         <script>
+        /*$(document).ready(function(){
+            $(this).scrollTop(0);
+        });*/
+        </script>
+        <script>
           $(document).ready(function () {
             $('body.hidden').fadeIn(1000).removeClass('hidden');
           });
         </script>
         <script>
         $(document).ready(function(){
-          $('.jumbotron').mousemove(function(e){
-            var x = -(e.pageX + this.offsetLeft) / 20;
-            var y = -(e.pageY + this.offsetTop) / 20;
-            $(this).css('background-position', x + 'px ' + y + 'px');
+          $('body').mousemove(function(e){
+            var x = -(e.pageX + this.offsetLeft) / 40;
+            var y = -(e.pageY + this.offsetTop) / 40;
+            $(".newsletter").css('background-position', x + 'px ' + y + 'px');
           });
         });
-</script>
+        </script>
     </head>
     <body>
         <div class="jumbotron">
@@ -91,7 +96,14 @@
               </div><!-- End row -->
             </div><!-- End container -->
             <div style="text-align: center; padding-top: 20px; padding-bottom: 20px;">
-                <p><a class="btn btn-primary btn-lg more" href="#" role="button">Learn more</a></p>
+                <p><a class="btn btn-primary btn-lg more" href="#" role="button">More Games</a></p>
+            </div>
+            <div class="newsletter">
+                <h1>Sign up for our newsletter to keep up do date with Anaptysian.</h1>
+                <form>
+                    <input type="email" name="newsletter-email" placeholder="Your email address" class="email-input"></input>
+                    <button class="btn btn-primary email-submit">Submit</button>
+                </forum>
             </div>
         </div>
     </body>

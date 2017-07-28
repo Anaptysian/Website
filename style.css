@@ -2,6 +2,14 @@
     font-style: arial;
 }
 
+input {
+ outline:none;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
 body {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -19,9 +27,6 @@ body {
     flex-direction: column;     /* make main axis horizontal (default setting) */
     justify-content: center; /* center items horizontally, in this case */
     align-items: center;
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
 }
 
 .jumbotron h1 {
@@ -75,4 +80,57 @@ body {
     color: #323037;
     border-color: #323037;
     background-color: transparent;
+}
+
+.newsletter {
+    margin-top: 40px;
+    text-align: center;
+    background-image: url("http://www.publicdomainpictures.net/pictures/150000/velka/banner-header-tapete-1450368431G3V.jpg");
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.newsletter h1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.email-input {
+    border: 3px solid white;
+    background-color: transparent;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 46px;
+    width: 266.69px;
+    transition: all 0.3s ease;
+}
+
+.email-input::placeholder {
+    color: white;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+.email-submit {
+    border: 2px solid #3498db;
+    border-radius: 50px;
+    background-color: #3498db;
+    color: black;
+    height: 50px;
+    width: 100px;
+    transition: all 0.3s ease;
+}
+
+.email-submit:hover {
+    background-color: transparent;
+    border-color: #3498db;
 }
