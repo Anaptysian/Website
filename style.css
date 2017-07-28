@@ -135,3 +135,12 @@ body {
     background-color: transparent;
     border-color: #3498db;
 }
+
+@media only screen and (max-width: 500px) {
+    .jumbotron {
+        transform: scale(2);
+    }
+    .jumbotron h1 {
+        font-size: 100px;
+    }
+}
