@@ -87,6 +87,7 @@ body {
     text-align: center;
     background-image: url("http://www.publicdomainpictures.net/pictures/150000/velka/banner-header-tapete-1450368431G3V.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     height: 600px;
     display: flex;
     flex-direction: column;     /* make main axis horizontal (default setting) */
