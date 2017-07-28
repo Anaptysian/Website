@@ -19,9 +19,9 @@ body {
     flex-direction: column;     /* make main axis horizontal (default setting) */
     justify-content: center; /* center items horizontally, in this case */
     align-items: center;
-    -moz-transform: scale(1.1);
- -webkit-transform: scale(1.1);
- transform: scale(1.1);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .jumbotron h1 {
@@ -54,6 +54,11 @@ body {
     background-color: transparent;
 }
 
+.middle {
+    background-color: white;
+    position: relative;
+}
+
 .more {
     line-height: 1.57500em;
     background-color: #323037;
@@ -63,4 +68,11 @@ body {
     border-width: 2.5px;
     transition: all 0.3s ease;
     text-transform: uppercase;
+}
+
+
+.more:hover {
+    color: #323037;
+    border-color: #323037;
+    background-color: transparent;
 }
