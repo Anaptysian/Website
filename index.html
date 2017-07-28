@@ -26,6 +26,13 @@
         });*/
         </script>
         <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                $(".name, .motto, .jumbo-button").css("opacity", 1 - $(window).scrollTop() / 700);
+             });
+        });
+        </script>
+        <script>
           $(document).ready(function () {
             $('body.hidden').fadeIn(1000).removeClass('hidden');
           });
@@ -42,8 +49,8 @@
     </head>
     <body>
         <div class="jumbotron">
-            <h1>Anaptysian</h1>
-            <p>A small dev team bringing games to you</p>
+            <h1 class="name">Anaptysian</h1>
+            <p class="motto">A small dev team bringing games to you</p>
             <p><a class="btn btn-primary btn-lg jumbo-button" href="#" role="button">Learn more</a></p>
         </div>
         <div class="middle">
@@ -97,7 +104,7 @@
               </div><!-- End row -->
             </div><!-- End container -->
             <div style="text-align: center; padding-top: 20px; padding-bottom: 20px;">
-                <p><a class="btn btn-primary btn-lg more" href="#" role="button">More Games</a></p>
+                <p><a class="btn btn-primary btn-lg more" href="games.html" role="button">More Games</a></p>
             </div>
             <div class="newsletter">
                 <h1>Sign up for our newsletter to keep up to date with Anaptysian.</h1>
