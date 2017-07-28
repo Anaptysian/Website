@@ -2,6 +2,11 @@
     font-style: arial;
 }
 
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 .jumbotron {
     text-align: center;
     text-transform: uppercase;
