@@ -31,20 +31,20 @@
           });
         </script>
         <script>
-        $(document).ready(function(){
+        /*$(document).ready(function(){
           $('body').mousemove(function(e){
             var x = -(e.pageX + this.offsetLeft) / 40;
             var y = -(e.pageY + this.offsetTop) / 40;
-            $(".newsletter").css('background-position', x + 'px ' + y + 'px');
+            $(".newsletter-section").css('background-position', x + 'px ' + y + 'px');
           });
-        });
+      });*/
         </script>
     </head>
     <body>
         <div class="jumbotron">
+            <img src="images/transparent-logo.png" style="height: 175px; width; 175px;"/>
             <h1 class="name">Anaptysian</h1>
             <p class="motto">A small dev team bringing games to you</p>
-            <p><a class="btn btn-primary btn-lg jumbo-button" href="#" role="button">Learn more</a></p>
         </div>
         <div class="middle">
             <div class="container" id="tourpackages-carousel">
@@ -99,13 +99,29 @@
             <div style="text-align: center; padding-top: 20px; padding-bottom: 20px;">
                 <p><a class="btn btn-primary btn-lg more" href="games.html" role="button">More Games</a></p>
             </div>
-            <div class="newsletter">
-                <h1>Sign up for our newsletter to keep up to date with Anaptysian.</h1>
-                <form>
-                    <input type="email" name="newsletter-email" placeholder="Your email address" class="email-input"></input>
-                    <button class="btn btn-primary email-submit">Submit</button>
-                </forum>
-            </div>
+
+            <article id="home-article-06" class="home-section home-article-06 article-newsletter" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+                <section class="newsletter-section">
+                	<form id="signup">
+                		<label class="h3">Sign up for our newsletter to keep up to date with Anaptysian.</label>
+                		<fieldset>
+                			<input type="text" name="email" id="email" placeholder="Your email address"/>
+                			<button class="h4 action-btn" name="submit" type="submit">
+                				<div class="action-link">
+                					Submit
+                				</div>
+                			</button>
+                			<div id="mc-response" class="mc-response">
+                							</div>
+                		</fieldset>
+                	</form>
+                </section>
+            </article>
         </div>
+        <footer>
+  <h1>Hi, I'm a Fixed-Footer!</h1>
+</footer>
+
+
     </body>
 </html>
