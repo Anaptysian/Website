@@ -4,7 +4,7 @@
 }
 
 input {
- outline:none;
+ outline: none;
 }
 
 .hidden {
@@ -269,6 +269,52 @@ h1:hover, p:hover {
     color: #F45E4F
 }
 
+.about {
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url("https://static.pexels.com/photos/34950/pexels-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 780px;
+    display: flex;
+    flex-direction: column;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;
+}
+
+
+.about h1 {
+    color: #ffffff;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.65);
+}
+
+.about p {
+    color: white;
+    font-size: 1.5em;
+}
+
+.about .team-button {
+    display: flex;
+    flex-direction: column;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;
+    background-color: #e67e22;
+    border-color: #e67e22;
+    color: white;
+    font-weight: 700;
+    height: 3.15em;
+    border-width: 2.5px;
+    transition: all 0.3s ease;
+}
+
+.about .team-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 footer {
   position: relative;
@@ -279,6 +325,7 @@ footer {
   color: #CCC;
   text-align: center;
 }
+
 footer h1 {
   position: fixed;
   z-index: 1;
@@ -291,10 +338,7 @@ footer h1 {
   font-weight: bold;
   color: #FFF;
   font-size: 2.125rem;
-
 }
-
-
 
 
 @media only screen and (max-width: 500px) {

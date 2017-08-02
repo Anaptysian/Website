@@ -1,0 +1,27 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    background-color: red;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;
+    height: 100vh;
+}
+
+.game-1 {
+    background-color: orange;
+}
+
+.game-2 {
+    background-color: blue;
+}
+
+.game-3 {
+    background-color: yellow;
+}
